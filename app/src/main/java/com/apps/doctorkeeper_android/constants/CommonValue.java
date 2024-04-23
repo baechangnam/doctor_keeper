@@ -7,9 +7,9 @@ package com.apps.doctorkeeper_android.constants;
 public class CommonValue {
 
     //서버연동  URL
-    public static String DEFAULT_URL = "http://14.40.30.73:8080/dplus/";
-    public static String IMAGE_URL = "http://14.40.30.73:8080/dslr";
-    public static String BASE_URL = "http://14.40.30.73:8080";
+    public static String DEFAULT_URL = "**";
+    public static String IMAGE_URL = "**";
+    public static String BASE_URL = "**";
     public static String[] DIAGNOSIS_LIST = {"임플란트", "보철", "교정", "심미보철", "보존", "치주" ,"동의서"};
 
     //진료분류(01 :임플란트, 02:보철, 03:교정, 04:심미보철, 05:보존, 06:치주)
