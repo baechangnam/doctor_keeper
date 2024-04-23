@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/padding_40dp"
+    android:paddingBottom="@dimen/padding_40dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_100dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/icon_65dp"
+            android:layout_height="@dimen/icon_65dp"
+            android:background="@drawable/icon"></ImageView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/pretendard_bold"
+                android:gravity="center"
+                android:shadowColor="#cccccc"
+                android:shadowDx="5.0"
+                android:shadowDy="5.0"
+                android:shadowRadius="5.0"
+                android:text="DOCTOR\nKEEPER"
+                android:textColor="@color/colorMain"
+                android:textSize="38sp"></TextView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="@dimen/btn_300dp" android:id="@+id/bt_customer"
+            android:layout_height="@dimen/btn_300dp"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_press_main"
+            android:drawableTop="@drawable/home_btn01_style"
+            android:fontFamily="@font/pretendard_bold"
+            android:gravity="center"
+            android:paddingTop="60dp"
+            android:paddingBottom="30dp"
+            android:stateListAnimator="@null"
+            android:text="@string/home_txt_custom"
+            android:textColor="@color/black"
+            android:textSize="34sp"
+            android:translationZ="10dp"
+            app:elevation="10dp">
+
+        </Button>
+
+
+        <Button
+            android:layout_width="@dimen/btn_300dp"
+            android:layout_height="@dimen/btn_300dp"
+            android:layout_gravity="center" android:id="@+id/bt_consult"
+            android:layout_marginLeft="70dp"
+            android:background="@drawable/btn_press_main"
+            android:drawableTop="@drawable/home_btn02_style"
+            android:fontFamily="@font/pretendard_bold"
+            android:gravity="center"
+            android:paddingTop="60dp"
+            android:paddingBottom="25dp"
+            android:stateListAnimator="@null"
+            android:text="@string/home_txt_consult"
+            android:textColor="@color/black"
+            android:textSize="34sp"
+            android:translationZ="10dp"
+            app:elevation="10dp">
+
+
+        </Button>
+
+        <Button
+            android:layout_width="@dimen/btn_300dp"
+            android:layout_height="@dimen/btn_300dp"
+            android:layout_gravity="center" android:id="@+id/bt_setting"
+            android:layout_marginLeft="70dp"
+            android:background="@drawable/btn_press_main"
+            android:drawableTop="@drawable/home_btn03_style"
+            android:fontFamily="@font/pretendard_bold"
+            android:gravity="center"
+            android:paddingTop="55dp"
+            android:paddingBottom="30dp"
+            android:stateListAnimator="@null"
+            android:text="@string/home_txt_setting"
+            android:textColor="@color/black"
+            android:textSize="34sp"
+            android:translationZ="10dp"
+            app:elevation="10dp">
+
+        </Button>
+
+
+        <ImageView
+            android:layout_width="205dp"
+            android:layout_height="225dp"
+            android:background="@drawable/btn_1"
+            android:visibility="gone">
+
+        </ImageView>
+
+        <ImageView
+            android:layout_width="205dp"
+            android:layout_height="225dp"
+            android:layout_marginLeft="100dp"
+            android:background="@drawable/btn_2"
+            android:visibility="gone">
+
+        </ImageView>
+
+        <ImageView
+            android:layout_width="205dp"
+            android:layout_height="225dp"
+            android:layout_marginLeft="100dp"
+            android:background="@drawable/btn_3"
+            android:visibility="gone">
+
+        </ImageView>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

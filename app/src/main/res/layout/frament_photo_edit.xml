@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/icon_40dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <Button
+            android:id="@+id/bt_slide_user"
+            android:layout_width="@dimen/btn_18dp"
+            android:layout_height="@dimen/btn_18dp"
+            android:background="@drawable/cancel">
+
+        </Button>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+        </View>
+
+
+        <Button
+            android:id="@+id/up_top"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_marginLeft="35dp"
+            android:background="@drawable/up_top">
+
+        </Button>
+
+        <Button
+            android:id="@+id/left_right"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="35dp"
+            android:background="@drawable/left_right">
+
+        </Button>
+
+        <Button
+            android:id="@+id/rotate_left"
+            android:layout_width="@dimen/btn_20dp"
+            android:layout_height="@dimen/btn_20dp"
+            android:layout_marginLeft="35dp"
+            android:background="@drawable/rot90_1">
+
+        </Button>
+
+        <Button
+            android:id="@+id/rotate_right"
+            android:layout_width="@dimen/btn_20dp"
+            android:layout_height="@dimen/btn_20dp"
+            android:layout_marginLeft="35dp"
+            android:background="@drawable/rot90">
+
+        </Button>
+
+        <Button
+            android:id="@+id/pen_width"
+            android:layout_width="@dimen/btn_20dp"
+            android:layout_height="@dimen/btn_20dp"
+            android:layout_marginLeft="35dp"
+            android:background="@drawable/pen">
+
+        </Button>
+
+        <Button
+            android:id="@+id/pen_color"
+            android:layout_width="@dimen/btn_20dp"
+            android:layout_height="@dimen/btn_20dp"
+            android:layout_marginLeft="35dp"
+            android:background="@drawable/pen1">
+
+        </Button>
+
+        <FrameLayout
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp">
+
+            <TextView
+                android:id="@+id/record"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/record">
+
+            </TextView>
+
+            <com.apps.doctorkeeper_android.util.BlinkingCircleView
+                android:id="@+id/bt_blink"
+                android:layout_width="12dp" android:visibility="gone"
+                android:layout_height="12dp"
+                android:layout_gravity="center|bottom"
+                android:layout_marginBottom="3dp" />
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/capture_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#000000"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="100dp"
+        android:paddingTop="50dp"
+        android:paddingRight="100dp"
+        android:paddingBottom="50dp">
+
+
+        <ImageView
+            android:id="@+id/bitmap_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true">
+
+        </ImageView>
+
+        <com.apps.doctorkeeper_android.util.DrawingsView
+            android:id="@+id/draw_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:visibility="gone">
+
+        </com.apps.doctorkeeper_android.util.DrawingsView>
+
+
+        <LinearLayout
+            android:id="@+id/menu_view"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="bottom"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/bt_hand"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@color/colorMain"
+                android:fontFamily="@font/pretendard_regular"
+                android:gravity="center"
+                android:text="손글씨"
+                android:textColor="#ffffff"
+                android:textSize="19sp"></Button>
+
+            <Button
+                android:id="@+id/bt_clear_some"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="50dp"
+                android:background="#ffffff"
+                android:fontFamily="@font/pretendard_regular"
+                android:gravity="center"
+                android:text="부분 지우기"
+                android:textColor="#000000"
+                android:textSize="19sp"></Button>
+
+            <Button
+                android:id="@+id/bt_clear"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="50dp"
+                android:background="#ffffff"
+                android:fontFamily="@font/pretendard_regular"
+                android:gravity="center"
+                android:text="전체 지우기"
+                android:textColor="#000000"
+                android:textSize="19sp"></Button>
+
+            <Button
+                android:id="@+id/bt_save"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="50dp"
+                android:background="#ffffff"
+                android:fontFamily="@font/pretendard_regular"
+                android:gravity="center"
+                android:text="저장히기"
+                android:textColor="#000000"
+                android:textSize="19sp"></Button>
+        </LinearLayout>
+    </FrameLayout>
+
+
+</LinearLayout>

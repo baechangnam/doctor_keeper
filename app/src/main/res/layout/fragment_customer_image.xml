@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/menu_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding_50dp"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp">
+
+            <Button
+                android:id="@+id/bt_slide_user"
+                android:layout_width="@dimen/btn_18dp"
+                android:layout_height="@dimen/btn_18dp"
+                android:background="@drawable/back_user">
+
+            </Button>
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/btn_5dp"
+                android:gravity="center"
+                android:textColor="#444444"
+                android:textSize="19sp">
+
+            </TextView>
+
+            <Button
+                android:id="@+id/bt_update_user"
+                android:layout_width="@dimen/btn_18dp"
+                android:layout_height="@dimen/btn_18dp"
+                android:layout_marginLeft="@dimen/btn_20dp"
+                android:background="@drawable/update_user">
+
+            </Button>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" android:layout_marginRight="50dp"
+                android:gravity="center_vertical|right"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/bt_camera_front"
+                    android:layout_width="@dimen/btn_20dp"
+                    android:layout_height="@dimen/btn_20dp"
+                    android:layout_marginLeft="@dimen/btn_20dp"
+                    android:background="@drawable/camera_front">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/bt_camera_rear"
+                    android:layout_width="@dimen/btn_20dp"
+                    android:layout_height="@dimen/btn_20dp"
+                    android:layout_marginLeft="@dimen/btn_20dp"
+                    android:background="@drawable/camera_rear"
+                    android:visibility="gone">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/bt_gallery"
+                    android:layout_width="@dimen/btn_20dp"
+                    android:layout_height="@dimen/btn_20dp"
+                    android:layout_marginLeft="@dimen/btn_20dp"
+                    android:background="@drawable/gallery">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/bt_xray"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="@dimen/btn_20dp"
+                    android:background="@drawable/xrays111">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/bt_refresh"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:layout_marginLeft="@dimen/btn_20dp"
+                    android:background="@drawable/refresh">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/bt_capture"
+                    android:layout_width="@dimen/btn_20dp"
+                    android:layout_height="@dimen/btn_20dp"
+                    android:layout_marginLeft="@dimen/btn_20dp"
+                    android:background="@drawable/screenshot2">
+
+                </Button>
+
+                <LinearLayout
+                    android:layout_width="63dp"
+                    android:layout_height="31dp"
+                    android:layout_marginLeft="@dimen/btn_20dp"
+                    android:background="@drawable/border_black_line1"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:id="@+id/tv_one"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/pretendard_bold"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textColor="@color/colorMain"
+                        android:textSize="15sp"></TextView>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#000000"></View>
+
+                    <TextView
+                        android:id="@+id/tv_two"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/pretendard_bold"
+                        android:gravity="center"
+                        android:text="2"
+                        android:textColor="@color/colorMain"
+                        android:textSize="15sp"></TextView>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/bt_edit"
+                    android:layout_width="@dimen/btn_20dp"
+                    android:layout_height="@dimen/btn_20dp"
+                    android:layout_marginLeft="@dimen/btn_20dp"
+                    android:background="@drawable/pencle1">
+
+                </Button>
+
+
+                <Button
+                    android:id="@+id/bt_agree"
+                    android:layout_width="@dimen/btn_20dp"
+                    android:layout_height="@dimen/btn_20dp"
+                    android:layout_marginLeft="@dimen/btn_20dp"
+                    android:background="@drawable/agreement">
+
+                </Button>
+
+
+                <FrameLayout
+                    android:layout_width="@dimen/btn_20dp"
+                    android:layout_height="@dimen/btn_20dp"
+                    android:layout_marginLeft="@dimen/btn_20dp">
+
+                    <TextView
+                        android:id="@+id/bt_record"
+                        android:layout_width="@dimen/btn_20dp"
+                        android:layout_height="@dimen/btn_20dp"
+                        android:background="@drawable/record">
+
+                    </TextView>
+
+                    <com.apps.doctorkeeper_android.util.BlinkingCircleView
+                        android:id="@+id/bt_blink"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp" android:visibility="gone"
+                        android:layout_gravity="center|bottom"
+                        android:layout_marginBottom="3dp"
+                   />
+
+                </FrameLayout>
+
+
+                <Button
+                    android:id="@+id/bt_share"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="@dimen/btn_20dp"
+                    android:background="@drawable/share">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/bt_print"
+                    android:layout_width="@dimen/btn_20dp"
+                    android:layout_height="@dimen/btn_20dp"
+                    android:layout_marginLeft="@dimen/btn_20dp"
+                    android:background="@drawable/print">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/bt_trash"
+                    android:layout_width="@dimen/btn_20dp"
+                    android:layout_height="@dimen/btn_20dp"
+                    android:layout_marginLeft="@dimen/btn_20dp"
+                    android:background="@drawable/trash">
+
+                </Button>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000">
+
+        </View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/btn_20dp"
+            android:paddingBottom="@dimen/btn_10dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingLeft="@dimen/btn_20dp"
+                android:paddingRight="@dimen/btn_20dp">
+
+                <com.github.chrisbanes.photoview.PhotoView
+                    android:id="@+id/iv_main_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true" />
+
+
+                <com.github.chrisbanes.photoview.PhotoView
+                    android:id="@+id/iv_x_ray_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:visibility="gone" />
+
+
+            </FrameLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_imagelist"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_120dp"
+                android:layout_marginTop="@dimen/btn_10dp"
+                android:paddingLeft="@dimen/btn_10dp">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_xraylist"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_120dp"
+                android:layout_marginTop="@dimen/btn_10dp"
+                android:paddingLeft="@dimen/btn_10dp"
+                android:visibility="gone">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/pr_loading"
+        style="?android:attr/progressBarStyleLargeInverse"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/custom_progress_background"
+        android:visibility="gone" />
+
+</FrameLayout>

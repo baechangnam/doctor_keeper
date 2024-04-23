@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="600dp"
+        android:layout_height="@dimen/icon_40dp"         android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="@drawable/border_black_line" android:paddingTop="5dp" android:paddingBottom="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/pretendard_regular"
+            android:gravity="center"
+            android:text="서버접속 IP"
+            android:textColor="@color/black"
+            android:textSize="17sp"></TextView>
+
+        <EditText
+            android:id="@+id/et_ip01"
+            android:layout_width="0dp" android:layout_marginLeft="20dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/border_black_line"
+            android:gravity="center"
+            android:inputType="number"
+            android:lines="1"
+            android:maxLength="3"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="17sp"></EditText>
+
+        <EditText
+            android:id="@+id/et_ip02"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/border_black_line"
+            android:gravity="center"
+            android:inputType="number"
+            android:lines="1"
+            android:maxLength="3"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="17sp"></EditText>
+
+        <EditText
+            android:id="@+id/et_ip03"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/border_black_line"
+            android:gravity="center"
+            android:inputType="number"
+            android:lines="1"
+            android:maxLength="3"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="17sp"></EditText>
+
+        <EditText
+            android:id="@+id/et_ip04"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/border_black_line"
+            android:gravity="center"
+            android:inputType="number"
+            android:lines="1"
+            android:maxLength="3"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="17sp"></EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="600dp"
+        android:layout_height="@dimen/icon_40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border_black_line"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/pretendard_regular"
+            android:gravity="center"
+            android:text="X-ray사용"
+            android:textColor="@color/black"
+            android:textSize="17sp"></TextView>
+
+        <View
+            android:layout_width="@dimen/icon_40dp" android:layout_marginLeft="20dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"></View>
+
+        <Button
+            android:id="@+id/set_login"
+            android:layout_width="@dimen/btn_30dp"
+            android:layout_height="@dimen/btn_30dp"
+            android:background="@drawable/push_on">
+
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="600dp"
+        android:layout_height="@dimen/icon_40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border_black_line"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/pretendard_regular"
+            android:gravity="center"
+            android:text="그룹ID"
+            android:textColor="@color/black"
+            android:textSize="17sp"></TextView>
+
+        <View
+            android:layout_width="@dimen/icon_40dp" android:layout_marginLeft="20dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"></View>
+
+        <Button
+            android:layout_width="@dimen/btn_20dp"
+            android:layout_height="@dimen/btn_20dp"
+            android:background="@drawable/setting">
+
+        </Button>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="240dp"
+        android:layout_height="@dimen/icon_40dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/btn_press_login"
+        android:fontFamily="@font/pretendard_bold"
+        android:gravity="center"
+        android:text="확인"
+        android:textColor="#ffffff"
+        android:textSize="20sp"></Button>
+
+</LinearLayout>

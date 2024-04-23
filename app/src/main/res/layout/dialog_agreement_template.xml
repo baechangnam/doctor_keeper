@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/padding_60dp"
+    android:paddingBottom="@dimen/padding_60dp">
+
+    <LinearLayout
+        android:layout_width="1000dp"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding_50dp"
+            android:background="#f8f8f8"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/btn_20dp"
+            android:paddingRight="@dimen/btn_20dp">
+
+            <Button
+                android:id="@+id/bt_back"
+                android:layout_width="@dimen/btn_20dp"
+                android:layout_height="@dimen/btn_20dp"
+                android:background="@drawable/cancel"></Button>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/pretendard_regular"
+                android:gravity="center"
+                android:text="템플릿 리스트"
+                android:textColor="@color/black"
+                android:textSize="18sp"></TextView>
+
+            <View
+
+                android:layout_width="@dimen/btn_20dp"
+                android:layout_height="@dimen/btn_20dp"></View>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+
+            android:padding="@dimen/btn_20dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_template"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

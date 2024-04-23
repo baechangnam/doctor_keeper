@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_65dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/icon_50dp"
+                android:layout_height="@dimen/icon_50dp"
+                android:background="@drawable/icon"></ImageView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/pretendard_bold"
+                    android:gravity="center"
+                    android:shadowColor="#cccccc"
+                    android:shadowDx="5.0"
+                    android:shadowDy="5.0"
+                    android:shadowRadius="5.0"
+                    android:text="DOCTOR\nKEEPER"
+                    android:textColor="@color/colorMain"
+                    android:textSize="25sp"></TextView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_50dp"
+            android:fontFamily="@font/pretendard_bold"
+            android:gravity="center"
+            android:text="@string/set_txt04"
+            android:textColor="@color/colorMain"
+            android:textSize="22sp"></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/pretendard_regular"
+            android:gravity="center"
+            android:text="@string/set_txt01"
+            android:textColor="@color/black"
+            android:textSize="22sp"></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/pretendard_regular"
+            android:gravity="center"
+            android:text="@string/set_txt02"
+            android:textColor="@color/black"
+            android:textSize="22sp"></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_40dp"
+            android:fontFamily="@font/pretendard_bold"
+            android:gravity="center"
+            android:text="@string/set_text_05"
+            android:textColor="@color/colorMain"
+            android:textSize="22sp"></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/pretendard_regular"
+            android:gravity="center"
+            android:text="@string/set_txt_06"
+            android:textColor="@color/black"
+            android:textSize="22sp"></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/pretendard_regular"
+            android:gravity="center"
+            android:text="@string/set_txt_07"
+            android:textColor="@color/black"
+            android:textSize="22sp"></TextView>
+    </LinearLayout>
+</RelativeLayout>

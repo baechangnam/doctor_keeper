@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_65dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/icon_50dp"
+                android:layout_height="@dimen/icon_50dp"
+                android:background="@drawable/icon"></ImageView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/pretendard_bold"
+                    android:gravity="center"
+                    android:shadowColor="#cccccc"
+                    android:shadowDx="5.0"
+                    android:shadowDy="5.0"
+                    android:shadowRadius="5.0"
+                    android:text="DOCTOR\nKEEPER"
+                    android:textColor="@color/colorMain"
+                    android:textSize="25sp"></TextView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="500dp"
+            android:layout_height="@dimen/icon_40dp"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal">
+
+
+
+            <EditText
+                android:id="@+id/et_id"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/border_blue_weak"
+                android:gravity="center_vertical" android:paddingLeft="40dp"
+                android:hint="아이디"
+                android:imeOptions="actionNext"
+                android:lines="1"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textSize="17sp"></EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="500dp"
+            android:layout_height="@dimen/icon_40dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+
+
+            <EditText
+                android:id="@+id/et_pass"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/border_blue_weak"
+                android:gravity="center_vertical" android:paddingLeft="40dp"
+                android:hint="비밀번호"
+
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:lines="1"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textSize="17sp"></EditText>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="500dp"
+            android:layout_height="@dimen/icon_40dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/btn_press_login"
+            android:fontFamily="@font/pretendard_bold"
+            android:gravity="center"
+            android:text="LOG IN"
+            android:textColor="#ffffff"
+            android:textSize="19sp"></Button>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="right|top"
+        android:orientation="horizontal"
+        android:paddingTop="30dp"
+        android:paddingRight="30dp">
+
+        <Button
+            android:layout_width="140dp" android:id="@+id/bt_setting"
+            android:layout_height="@dimen/icon_40dp"
+            android:drawableLeft="@drawable/login_btn_style"
+            android:fontFamily="@font/pretendard_bold"
+            android:background="@drawable/btn_press_login_set"
+            android:gravity="center" android:paddingLeft="25dp" android:paddingRight="10dp"
+            android:stateListAnimator="@null"
+            android:text="@string/home_txt_setting"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            ></Button>
+
+    </LinearLayout>
+</FrameLayout>

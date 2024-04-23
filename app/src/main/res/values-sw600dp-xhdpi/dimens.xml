@@ -1,0 +1,36 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="btn_30dp">40dp</dimen>
+    <dimen name="btn_40dp">50dp</dimen>
+    <dimen name="btn_65dp">100dp</dimen>
+    <dimen name="icon_40dp">60dp</dimen>
+    <dimen name="icon_50dp">70dp</dimen>
+    <dimen name="padding_80dp">80dp</dimen>
+    <dimen name="icon_65dp">85dp</dimen>
+
+    <dimen name="btn_120dp">120dp</dimen>
+    <dimen name="btn_100dp">140dp</dimen>
+
+    <dimen name="btn_300dp">240dp</dimen>
+
+    <dimen name="home_80dp">70dp</dimen>
+
+    <dimen name="padding_40dp">40dp</dimen>
+    <dimen name="padding_50dp">50dp</dimen>
+    <dimen name="padding_60dp">60dp</dimen>
+    <dimen name="padding_200dp">200dp</dimen>
+    <dimen name="padding_240dp">260dp</dimen>
+
+    <dimen name="btn_66dp">67dp</dimen>
+    <dimen name="btn_33dp">33dp</dimen>
+    <dimen name="btn_20dp">30dp</dimen>
+    <dimen name="btn_15dp">25dp</dimen>
+    <dimen name="btn_18dp">27dp</dimen>
+
+
+    <dimen name="btn_10dp">20dp</dimen>
+
+    <dimen name="padding_90dp">90dp</dimen>
+
+    <dimen name="btn_5dp">10dp</dimen>
+</resources>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/menu_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_50dp"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp">
+
+        <Button
+            android:id="@+id/bt_slide_user"
+            android:layout_width="@dimen/btn_18dp"
+            android:layout_height="@dimen/btn_18dp"
+            android:background="@drawable/cancel">
+
+        </Button>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000">
+
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/btn_20dp"
+        android:paddingBottom="@dimen/btn_10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" android:id="@+id/merge_view"
+            android:gravity="center" android:orientation="horizontal"
+            android:paddingLeft="@dimen/btn_20dp"
+            android:paddingRight="@dimen/btn_20dp">
+
+            <LinearLayout
+                android:layout_width="0dp" android:gravity="center"
+                android:layout_height="match_parent" android:layout_weight="1">
+                <com.github.chrisbanes.photoview.PhotoView
+                    android:id="@+id/iv_image_left"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true">
+
+                </com.github.chrisbanes.photoview.PhotoView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp" android:gravity="center" android:layout_marginLeft="5dp"
+                android:layout_height="match_parent" android:layout_weight="1">
+                <com.github.chrisbanes.photoview.PhotoView
+                    android:id="@+id/iv_image_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true">
+
+                </com.github.chrisbanes.photoview.PhotoView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_120dp"
+            android:layout_marginTop="@dimen/btn_10dp"
+            android:gravity="center">
+            <Button
+                android:id="@+id/save"
+                android:layout_width="500dp"
+                android:layout_height="@dimen/icon_40dp"
+                android:background="@drawable/btn_press_login"
+                android:fontFamily="@font/pretendard_bold"
+                android:gravity="center"
+                android:text="SAVE"
+                android:textColor="#ffffff"
+                android:textSize="19sp"></Button>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
